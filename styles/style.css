@@ -43,7 +43,7 @@
     display: flex;
 }
 .title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 150%;
     letter-spacing: 1.8%;
@@ -91,11 +91,11 @@
 .hidden{
     display: none;
 }
-
+/* banner related styles */
 .banner{
     max-width: 82%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 50px 0px;
 
@@ -107,8 +107,8 @@
 .banner-title{
     font-size: 4rem;
     font-weight: 800;
-    line-height: 150%;
-    letter-spacing: 1.8%;
+    line-height: 130%;
+    letter-spacing: 0%;
 }
 .banner-describtion{
     font-size: 1rem;
@@ -121,6 +121,7 @@
     padding: 12px 30px;
     font-size: 1rem;
     font-weight: 600;
+    margin-right: 10px;
 
 }
 .btn-secondery{
@@ -139,26 +140,30 @@
     padding: 15px 25px;
     max-width: 150px;
     border-radius: 10px;
+
 }
 .img-content-top{
-    top: 44%;
-    right: 7%;
+    top: 44.5%;
+    right: 4%;
     z-index: 1;
     position: absolute;
 }
 .img-content-bottom{
+    position: absolute;
     justify-content: space-between;
     align-items: center;
-    margin-top: -160px;
-    margin-left: -70px;
+    margin-top: -165px;
+    margin-left: -100px;
     z-index: 1;
-    position: absolute;
+    
 }
 .circle-danger{
     width: 35px;
     height: 35px;
     border-radius: 50%;
     background: #E6533C;
+    margin-right: 10px;
+
 }
 .btm-title{
     font-size: 1.7rem;
@@ -167,13 +172,59 @@
     letter-spacing: 0%;
 }
 
-
-
+/* main section related styles */
 .main{
     max-width: 82%;
     margin: 0 auto;
 }
-
+.change-habits{
+    margin: 100px 0px;
+}
+.habits-content{
+    max-width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+.habits-title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    padding: 10px 0px;
+}
+.habits-content > .subtitle{
+    padding: 20px 0px;
+    margin-bottom: 50px;
+}
+.habits-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card{
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+}
+.card-image{
+    margin: 20px 0px;
+}
+.image{
+    max-width: 200px;
+    max-height: 200px;
+    box-sizing: border-box;
+    border: 5px solid rgb(34, 34, 34);
+    border-radius: 50%;
+}
+.card-image img{
+    width: 100%;
+}
+.card-title{
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
 
 
 

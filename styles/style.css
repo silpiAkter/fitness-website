@@ -36,17 +36,29 @@
     background: rgb(230, 83, 60);
     padding: 7px 20px;
     border-radius: 30px;
+    border: none;
 
 }
 .display-flex{
     display: flex;
 }
+.title{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 1.8%;
+}
+.subtitle{
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
 
 /* nav related styles */
 
 .header{
-    max-width: 82%;
-    margin: 0 auto;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .brand{
     font-size: 2.25rem;
@@ -55,6 +67,8 @@
     letter-spacing: 0%;
 }
 .navbar{
+    max-width: 82%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0px;
@@ -74,7 +88,100 @@
 .nav-link-spaceing{
     margin-left: 50px;
 }
+.hidden{
+    display: none;
+}
 
 .banner{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    max-width: 82%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0px;
+
+}
+.banner-content{
+    max-width: 680px;
+    
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 1.8%;
+}
+.banner-describtion{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    padding: 30px 0px;
+}
+.btn{
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.btn-secondery{
+    background: transparent;
+    border: 1px solid #fff;
+}
+.banner-image{
+    max-width: 680px;
+}
+.banner-image img{
+    width: 100%;
+}
+.img-content-top, .img-content-bottom{
+    border: 1pox solid rgba(255, 255, 255, 0.5);
+    background: rgb(34, 34, 34);
+    padding: 15px 25px;
+    max-width: 150px;
+    border-radius: 10px;
+}
+.img-content-top{
+    top: 44%;
+    right: 7%;
+    z-index: 1;
+    position: absolute;
+}
+.img-content-bottom{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -160px;
+    margin-left: -70px;
+    z-index: 1;
+    position: absolute;
+}
+.circle-danger{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #E6533C;
+}
+.btm-title{
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+
+
+.main{
+    max-width: 82%;
+    margin: 0 auto;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .nav-links{
+        display: none;
+    }
+    .hidden{
+        
+    }
 }

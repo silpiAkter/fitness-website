@@ -8,6 +8,18 @@
   font-variation-settings:
     "slnt" 0;
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Monsieur+La+Doulaise&display=swap');
+
+.fleur-de-leah-regular {
+    font-family: "Fleur De Leah", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 *{
     margin: 0;
     padding: 0;
@@ -113,9 +125,13 @@
 .nav-link-spaceing{
     margin-left: 50px;
 }
-.hidden{
-    display: none;
-}
+
+.title-shape{
+    font-style: italic;
+    font-weight: 100;
+  }
+
+
 /* banner related styles */
 .banner{
 
@@ -125,7 +141,7 @@
 
 }
 .banner-content{
-    max-width: 680px;
+    max-width: 50%;
     
 }
 .banner-title, .footer-title{
@@ -147,7 +163,7 @@
     border: 1px solid #00D084;
 }
 .banner-image{
-    max-width: 680px;
+    max-width: 50%;
 }
 .banner-image img{
     width: 100%;

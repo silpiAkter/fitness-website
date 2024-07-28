@@ -122,6 +122,9 @@
     text-decoration: none;
     
 }
+.nav-bar{
+    display: none;
+}
 .nav-link-spaceing{
     margin-left: 50px;
 }
@@ -137,7 +140,8 @@
 
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0px;
+    padding: 30px 0px;
+    height: auto;
 
 }
 .banner-content{
@@ -164,6 +168,7 @@
 }
 .banner-image{
     max-width: 50%;
+    height: auto;
 }
 .banner-image img{
     width: 100%;
@@ -177,7 +182,7 @@
 
 }
 .img-content-top{
-    top: 47%;
+    top: 44%;
     right: 4%;
     z-index: 1;
     position: absolute;
@@ -393,17 +398,7 @@ td, th{
     width: 91%;
 }
 
-/* .icon-set{
-    margin-left: -50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
 
-.icon-set a{
-    text-decoration: none;
-} */
 /* meet our team related styles */
 
 .team-image{
@@ -469,8 +464,14 @@ td, th{
     border-top: 2px solid rgba(78, 77, 77, 0.51);
 }
 @media screen and (max-width:576px) {
-    .navbar > .nav-links{
+    .nav-links{
+        border: none;
+    }
+    .nav-link{
         display: none;
+    }
+    .nav-bar{
+        display: block;
     }
     .banner{
         flex-direction: column;
@@ -593,6 +594,9 @@ td, th{
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+    .nav-bar{
+        display: none;
+    }
     .banner{
         flex-direction: column;
     }
@@ -667,6 +671,9 @@ td, th{
     .navbar, .banner, .change-your-habits, .run-extra-miles, .unic, .bmi-calculator, .our-team{
         width: 100%;
         margin: 0 auto;
+    }
+    .nav-bar{
+        display: none;
     }
     .img-content-top{
         top: 80%;

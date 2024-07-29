@@ -8,17 +8,16 @@
   font-variation-settings:
     "slnt" 0;
 }
+ 
+  .the-nautigal-regular {
+    font-family: "The Nautigal", cursive;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 10rem;
+    letter-spacing: 1.8%;
+    word-spacing: 1rem;
+  } 
 
-
-
-@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Monsieur+La+Doulaise&display=swap');
-
-.fleur-de-leah-regular {
-    font-family: "Fleur De Leah", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 
 *{
     margin: 0;
@@ -275,14 +274,9 @@
     border-radius: 10px;
    
 }
-.run-content{
-    max-width: 400px;
+.run-content, .run-image{
+    max-width: 40%;
     padding-left: 20px;
-}
-.run-image{
-    max-width: 400px;
-    max-height: 400px;
-    
 }
 
 .run-image > .run-img{
@@ -452,7 +446,7 @@ td, th{
 }
 .footer-content{
     max-width: 400px;
-    /* grid-column: span 1.5; */
+    
 }
 .footer-title{
     font-style: italic;
@@ -465,7 +459,7 @@ td, th{
     text-align: center;
     border-top: 2px solid rgba(78, 77, 77, 0.51);
 }
-/* resposive for mideum device  */
+/* resposive for medium device  */
 
 @media screen and (max-width:576px) {
     .nav-links{
@@ -510,7 +504,7 @@ td, th{
     .img-content-top{
         position: absolute;
         right: -15%;
-        top: 30%;
+        top: 20%;
     }
     .img-content-bottom{
         position: absolute;
@@ -550,9 +544,12 @@ td, th{
     .unic-image img{
         width: 100%;
     }
+    .btn-unic{
+        width: 50%;
+    }
 
     .bmi-calculator{
-        margin-top: 100px;
+        margin: 100px 0px;
     }
     .bmi-calculate{
         width: 100%;
@@ -600,7 +597,7 @@ td, th{
     }
 }
 
-/* resposive for tabe device  */
+/* resposive for tablate device  */
 
 @media screen and (min-width:576px) and (max-width:992px) {
     .nav-bar{
@@ -613,10 +610,6 @@ td, th{
         max-width: 85%;   
     }
 
-    .banner-title{
-        /* max-width: 600px; */
-        font-size: 5rem;
-    }
     .banner-image{
         position: relative;
         max-width: 576px;
@@ -650,19 +643,39 @@ td, th{
     .habits-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .run-image{
-        justify-content: space-between;
+    .run-content, .run-image{
+        width: 40%;
+        gap: 20px;
     }
+    .run-extra-miles{
+        align-items: start;
+
+    }
+
+    .run-image img{
+        height: 360px;
+    }
+    .run-content > .btn{
+        margin-top: 0px;
+    }
+
     .unic{
         flex-direction: column;
-        margin: 0 auto;
+        
     }
+
+    .unic-image{
+        margin-bottom: 150px;
+    }
+    
     .calculate{
         flex-direction: column;
         gap: 10px;
+        
     }
     .bmi-calculates{
         margin-top: 30px;
+        padding: 50px 0px;
     }
     
     .team-image{
@@ -709,7 +722,7 @@ td, th{
         display: none;
     }
     .img-content-top{
-        top: 80%;
+        top: 56%;
     }
     .teamImage img{
         margin-left: 0px;

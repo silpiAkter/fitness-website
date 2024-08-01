@@ -8,15 +8,6 @@
   font-variation-settings:
     "slnt" 0;
 }
- 
-  .the-nautigal-regular {
-    font-family: "The Nautigal", cursive;
-    font-weight: 100;
-    font-style: italic;
-    font-size: 10rem;
-    letter-spacing: 1.8%;
-    word-spacing: 1rem;
-  } 
 
 
 *{
@@ -128,11 +119,6 @@
     margin-left: 50px;
 }
 
-.title-shape{
-    font-style: italic;
-    font-weight: 100;
-  }
-
 
 /* banner related styles */
 .banner{
@@ -151,8 +137,19 @@
     font-size: 5rem;
     font-weight: 800;
     line-height: 130%;
-    letter-spacing: 0%;
+    letter-spacing: .5rem;
+    word-spacing: .5rem;
 }
+
+.title-shape {
+    font-family: 'Miama', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 6rem;
+    letter-spacing: 0rem;
+    line-height: 0%;
+  } 
+
 .banner-describtion{
     font-size: 1rem;
     font-weight: 600;
@@ -392,7 +389,6 @@ td, th{
     width: 91%;
 }
 
-
 /* meet our team related styles */
 
 .team-image{
@@ -592,8 +588,16 @@ td, th{
     .footer{
         padding: 20px;
     }
+    .footer-menus{
+        margin-top: 20px;
+    }
+    
+    .footer-menu{
+        display: block;
+    }
+
     .footer-policy{
-        padding-top: 20px;
+        padding-top: 30px;
     }
 }
 

@@ -9,7 +9,6 @@
     "slnt" 0;
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -51,7 +50,7 @@
 
 }
 .btn{
-    padding: 15px 50px;
+    padding: 18px 50px;
     font-size: 1rem;
     font-weight: 600;
     margin-right: 20px;
@@ -137,15 +136,14 @@
     font-size: 5rem;
     font-weight: 800;
     line-height: 130%;
-    letter-spacing: .5rem;
-    word-spacing: .5rem;
+    letter-spacing: .3rem;
 }
 
 .title-shape {
     font-family: 'Miama', sans-serif;
     font-weight: 100;
     font-style: italic;
-    font-size: 6rem;
+    font-size: 5.5rem;
     letter-spacing: 0rem;
     line-height: 0%;
   } 
@@ -262,23 +260,26 @@
 /* run-extra-miles related styles */
 
 .run-extra-miles{
-    /* max-width: 82%;
-    margin: 0 auto; */
     justify-content: space-between;
-    align-items: center;
     padding: 30px;
     background: rgb(34, 34, 34);
     border-radius: 10px;
    
 }
-.run-content, .run-image{
+.run-content{
     max-width: 40%;
     padding-left: 20px;
+}
+
+.run-image{
+    max-width: 45%;
 }
 
 .run-image > .run-img{
     border-radius: 10px;
     width: 100%;
+    object-fit: none;
+    object-position: 66% 33%;
     
 }
 .run-content > .btn{
@@ -371,23 +372,35 @@ td, th{
 .bmi-calculates{
     max-width: 680px;
 }
+
 .form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px 0px;
 }
-#text-input{
-    margin-right: 20px;
-}
-.input, #input{
-    width: 50%;
+
+.inputs, .input-btn{
+    max-width: 100%;
     padding: 15px 30px;
     border-radius: 7px;
     border: none;
     background: rgba(78, 77, 77, 0.51);
-    margin-bottom: 20px;
+    margin: 10px 10px 10px 0px;
+
 }
+.input-btn{
+    justify-content: space-between;
+    align-items: center;
+}
+.input-btn > input, .input-btn > #input{
+    background: transparent;
+    border: none;
+}
+
 #input{
-    width: 91%;
+    grid-column: span 2;
 }
+
 
 /* meet our team related styles */
 
@@ -401,14 +414,14 @@ td, th{
     margin: 0 auto;
 }
 .teamImage{
-    max-width: 350px;
+    max-width: 380px;
     
 }
 .teamImage img{
     width: 100%;
-    max-height: 200px;
+    max-height: 260px;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .trainer-name{
@@ -422,7 +435,7 @@ td, th{
 .triner-content{
     position: absolute;
     margin-top: -60px;
-    padding-left: 30px;
+    padding-left: 50px;
 }
 
 /* footer related styles */
@@ -435,8 +448,6 @@ td, th{
 }
 .footer-container{
     justify-content: space-around;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
     gap: 100px;
     margin-bottom: 30px;
 }
@@ -480,12 +491,12 @@ td, th{
         font-size: 3rem;
     }
     .btn{
-        width: 35%;
+        width: 40%;
         position: absolute;
         padding: 20px 10px;
     }
     .btn-secondery{
-        margin-left: 200px;
+        margin-left: 230px;
     }
     .banner-image{
         position: relative;
@@ -500,7 +511,7 @@ td, th{
     .img-content-top{
         position: absolute;
         right: -15%;
-        top: 20%;
+        top: 30%;
     }
     .img-content-bottom{
         position: absolute;
@@ -510,29 +521,54 @@ td, th{
     .titles{
         font-size: 2rem;
     }
+
+    .banner-title{
+        font-size: 3rem;
+        letter-spacing: .2rem;
+        word-spacing: .2rem;
+    } 
+
+    .title-shape{
+        font-size: 3.3rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
     .habits-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .change-your-habits, .run-extra, .unic, .our-team{
+    .change-your-habits, .unic, .our-team{
         margin: 10px;
     }
     .run-extra-miles{
+        width: 100%;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
+        padding: 20px;
+    }
+    .run-content, .run-image{
+        max-width: 100%;
+        padding: 20px;
     }
     .run-content{
         margin-bottom: 30px;
         position: relative;
     }
-    .btn-spaceing{
+    .run-image > .run-img{
         width: 100%;
+        object-fit: cover;
+    }
+    .btn-spaceing{
+        width: 90%;
         margin: 30px 0px;
         display: inline-block;
-        margin-left: -15px;
     }
     .run-image{
         margin-top: 50px;
     }
+
     .unic{
         flex-direction: column;
         margin: 0 auto;
@@ -562,11 +598,15 @@ td, th{
         margin-top: 30px;
     }
 
-    .input{
-        width: 100%;
+    .inputs{
+        max-width: 60%;
+        margin: 10px 0px 10px 0px;
+    }
+    #input-gender{
+        max-width: 85%;
     }
     #input{
-        width: 85%;
+        max-width: 92%;
     }
     .team-image{
         grid-template-columns: repeat(1, 1fr);
@@ -588,6 +628,9 @@ td, th{
     .footer{
         padding: 20px;
     }
+    .footer-title{
+        letter-spacing: .1rem;
+    } 
     .footer-menus{
         margin-top: 20px;
     }
@@ -648,7 +691,7 @@ td, th{
         grid-template-columns: repeat(2, 1fr);
     }
     .run-content, .run-image{
-        width: 40%;
+        max-width: 45%;
         gap: 20px;
     }
     .run-extra-miles{

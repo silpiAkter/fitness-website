@@ -176,7 +176,7 @@
 
 }
 .img-content-top{
-    top: 44%;
+    top: 42%;
     right: 4%;
     z-index: 1;
     position: absolute;
@@ -626,7 +626,7 @@ td, th{
         
     }
     .footer{
-        padding: 20px;
+        padding: 30px;
     }
     .footer-title{
         letter-spacing: .1rem;
@@ -640,7 +640,7 @@ td, th{
     }
 
     .footer-policy{
-        padding-top: 30px;
+        padding: 30px 0px;
     }
 }
 
@@ -769,7 +769,7 @@ td, th{
         display: none;
     }
     .img-content-top{
-        top: 56%;
+        top: 41%;
     }
     .teamImage img{
         margin-left: 0px;

@@ -176,7 +176,7 @@
 
 }
 .img-content-top{
-    top: 42%;
+    top: 44%;
     right: 4%;
     z-index: 1;
     position: absolute;
@@ -379,29 +379,28 @@ td, th{
     margin: 20px 0px;
 }
 
-.inputs, .input-btn{
+.inputs, .select{
     max-width: 100%;
-    padding: 15px 30px;
+    padding: 15px 20px;
     border-radius: 7px;
     border: none;
     background: rgba(78, 77, 77, 0.51);
     margin: 10px 10px 10px 0px;
 
 }
-.input-btn{
-    justify-content: space-between;
-    align-items: center;
-}
-.input-btn > input, .input-btn > #input{
-    background: transparent;
-    border: none;
+.select{
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 0.3);
 }
 
-#input{
+.selects{
     grid-column: span 2;
 }
 
-
+option{
+    background: rgba(23, 23, 23, 0.647);
+    color: rgb(246, 246, 248);
+}
 /* meet our team related styles */
 
 .team-image{
@@ -462,7 +461,7 @@ td, th{
     line-height: 200%;
 }
 .footer-policy{
-    padding-top: 50px;
+    padding-top: 40px;
     text-align: center;
     border-top: 2px solid rgba(78, 77, 77, 0.51);
 }
@@ -599,25 +598,29 @@ td, th{
     }
 
     .inputs{
-        max-width: 60%;
+        max-width: 78%;
         margin: 10px 0px 10px 0px;
     }
-    #input-gender{
-        max-width: 85%;
-    }
-    #input{
-        max-width: 92%;
-    }
+
     .team-image{
         grid-template-columns: repeat(1, 1fr);
-        width: 75%;
+        max-width: 100%;
+        
     }
     .teamImage{
-        width: 100%;
+        max-width: 360px;
+        
     }
+
+    .triner-content{
+        padding-left: 10px;
+    }
+
     .teamImage img{
-        margin-left: 0px;
+        width: 100%;
+        margin-left: 15px;
     }
+
     .footer-container{
         flex-direction: column;
         gap: 0px;
@@ -639,9 +642,6 @@ td, th{
         display: block;
     }
 
-    .footer-policy{
-        padding: 30px 0px;
-    }
 }
 
 /* resposive for tablate device  */
@@ -769,7 +769,7 @@ td, th{
         display: none;
     }
     .img-content-top{
-        top: 41%;
+        top: 43.5%;
     }
     .teamImage img{
         margin-left: 0px;

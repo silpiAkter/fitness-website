@@ -726,6 +726,10 @@ option{
     .unic-image{
         margin-bottom: 150px;
     }
+
+    .bmi-calculator{
+        margin: 60px 0px;
+    }
     
     .calculate{
         flex-direction: column;
@@ -775,7 +779,7 @@ option{
 
 /* resposive for desktop device  */
 
-@media screen and (min-width:576px) and (min-width:992px) and (max-width:1400px) {
+@media screen and  (min-width:992px) and (max-width:1400px) {
     .navbar, .banner, .change-your-habits, .run-extra-miles, .unic, .bmi-calculator, .our-team{
         width: 100%;
         margin: 0 auto;
@@ -785,6 +789,10 @@ option{
     }
     .img-content-top{
         top: 41%;
+    }
+
+    .bmi-calculator{
+        margin: 100px 0px;
     }
     .teamImage img{
         margin-left: 0px;

@@ -434,7 +434,7 @@ option{
 .triner-content{
     position: absolute;
     margin-top: -60px;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 
 /* footer related styles */
@@ -779,7 +779,7 @@ option{
 
 /* resposive for desktop device  */
 
-@media screen and  (min-width:992px) and (max-width:1400px) {
+@media screen and (min-width:992px) and (max-width:1400px) {
     .navbar, .banner, .change-your-habits, .run-extra-miles, .unic, .bmi-calculator, .our-team{
         width: 100%;
         margin: 0 auto;
@@ -788,7 +788,7 @@ option{
         display: none;
     }
     .img-content-top{
-        top: 41%;
+        top: 43%;
     }
 
     .bmi-calculator{

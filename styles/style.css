@@ -85,7 +85,8 @@
 /* nav related styles */
 
 .header{
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background-image: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+
 }
 .brand{
     font-size: 2.25rem;
@@ -121,7 +122,6 @@
 
 /* banner related styles */
 .banner{
-
     justify-content: space-between;
     align-items: center;
     padding: 30px 0px;
@@ -132,8 +132,8 @@
     max-width: 50%;
     
 }
-.banner-title, .footer-title{
-    font-size: 5rem;
+.banner-title{
+    font-size: 4.88rem;
     font-weight: 800;
     line-height: 130%;
     letter-spacing: .3rem;
@@ -143,7 +143,7 @@
     font-family: 'Miama', sans-serif;
     font-weight: 100;
     font-style: italic;
-    font-size: 5.5rem;
+    font-size: 5.3rem;
     letter-spacing: 0rem;
     line-height: 0%;
   } 
@@ -176,9 +176,9 @@
 
 }
 .img-content-top{
-    top: 44%;
+    top: 43%;
     right: 4%;
-    z-index: 1;
+    /* z-index: 1; */
     position: absolute;
 }
 .img-content-bottom{
@@ -187,7 +187,7 @@
     align-items: center;
     margin-top: -165px;
     margin-left: -100px;
-    z-index: 1;
+    /* z-index: 1; */
     
 }
 .circle-danger{
@@ -413,9 +413,9 @@ option{
     margin: 0 auto;
 }
 .teamImage{
-    max-width: 380px;
-    
+    max-width: 380px;   
 }
+
 .teamImage img{
     width: 100%;
     max-height: 260px;
@@ -455,7 +455,11 @@ option{
     
 }
 .footer-title{
+    font-size: 4.25rem;
     font-style: italic;
+    font-weight: 800;
+    line-height: 120px;
+    letter-spacing: 0%;
 }
 .ftr-menu-spaceing{
     line-height: 200%;
@@ -495,7 +499,7 @@ option{
         padding: 20px 10px;
     }
     .btn-secondery{
-        margin-left: 230px;
+        margin-left: 240px;
     }
     .banner-image{
         position: relative;
@@ -602,23 +606,32 @@ option{
         margin: 10px 0px 10px 0px;
     }
 
+    .our-team{
+        margin: 50px 0px;
+    }
+
+    .team-container{
+        max-width: 70%;
+    }
+
     .team-image{
         grid-template-columns: repeat(1, 1fr);
-        max-width: 100%;
-        
-    }
-    .teamImage{
-        max-width: 360px;
-        
+        /* max-width: 100%; */
+        margin: 0 auto;
+
     }
 
     .triner-content{
         padding-left: 10px;
     }
 
+    .teamImage{
+        max-width: 100%;   
+    }
+
     .teamImage img{
         width: 100%;
-        margin-left: 15px;
+        margin-left: 0px;
     }
 
     .footer-container{
@@ -669,8 +682,8 @@ option{
     }
     .img-content-top{
         position: absolute;
-        right: -15%;
-        top: 22%;
+        right: -20%;
+        top: 34%;
     }
     .img-content-bottom{
         position: absolute;
@@ -679,9 +692,8 @@ option{
     }
 
     .btn{
-        width: 30%;
         position: absolute;
-        padding: 20px 10px;
+        padding: 20px 50px;
     }
     .btn-secondery{
         margin-left: 300px;
@@ -690,20 +702,20 @@ option{
     .habits-container{
         grid-template-columns: repeat(2, 1fr);
     }
-    .run-content, .run-image{
-        max-width: 45%;
-        gap: 20px;
+
+    .titles{
+        font-size: 2.5rem;
     }
+
     .run-extra-miles{
         align-items: start;
-
     }
 
     .run-image img{
         height: 360px;
     }
     .run-content > .btn{
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .unic{
@@ -729,9 +741,13 @@ option{
         width: 100%;   
     }
     .teamImage img{
-        width: 240px;
-        max-height: 200px;
+        width: 250px;
+        max-height: 180px;
         margin-left: 3px;
+    }
+
+    .triner-content{
+        padding-left: 10px;
     }
     .footer{
         padding: 50px 30px;
@@ -743,7 +759,6 @@ option{
     }
     .footer-content{
         display: block;
-    
     }
     .footer-menus{
         position: relative;
@@ -753,7 +768,7 @@ option{
     .ftr-menus{
         position: absolute;
         margin-left: 350px;
-        margin-top: 200px;
+        margin-top: 203px;
     }
 
 }
@@ -769,7 +784,7 @@ option{
         display: none;
     }
     .img-content-top{
-        top: 43.5%;
+        top: 41%;
     }
     .teamImage img{
         margin-left: 0px;

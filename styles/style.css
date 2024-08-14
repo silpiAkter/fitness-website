@@ -172,7 +172,7 @@
 .img-content-top, .img-content-bottom{
     border: 1pox solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(8px);
     padding: 15px 25px;
     max-width: 150px;
     border-radius: 10px;
@@ -182,8 +182,8 @@
 }
 
 .img-content-top{
-    top: 43%;
-    right: 4%;
+    top: 44%;
+    right: 5%;
     /* z-index: 1; */
     position: absolute;
 }
@@ -191,7 +191,7 @@
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    margin-top: -160px;
+    margin-top: -163px;
     margin-left: -100px;
     /* z-index: 1; */
     

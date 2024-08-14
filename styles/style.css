@@ -47,6 +47,7 @@
     padding: 7px 20px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
 
 }
 .btn{
@@ -54,7 +55,7 @@
     font-size: 1rem;
     font-weight: 600;
     margin-right: 20px;
-
+    cursor: pointer;
 }
 .display-flex{
     display: flex;
@@ -96,6 +97,7 @@
     font-style: italic;
     line-height: 120%;
     letter-spacing: 0%;
+    cursor: pointer;
 }
 .navbar{
     justify-content: space-between;
@@ -170,7 +172,7 @@
     width: 100%;
 }
 .img-content-top, .img-content-bottom{
-    border: 1pox solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     padding: 15px 25px;
@@ -299,7 +301,7 @@
 }
 
 .unic-content{
-    max-width: 680px;
+    max-width: 660px;
 }
 .unic-content-items{
     margin: 50px 0px;
@@ -388,6 +390,7 @@ td, th{
     max-width: 100%;
     padding: 15px 20px;
     border-radius: 7px;
+    font-size: 1rem;
     border: none;
     background: rgba(78, 77, 77, 0.51);
     margin: 10px 10px 10px 0px;
@@ -396,6 +399,7 @@ td, th{
 .select{
     padding-right: 20px;
     color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }
 
 .selects{

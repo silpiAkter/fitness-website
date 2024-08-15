@@ -86,9 +86,7 @@
 /* nav related styles */
 
 .header{
-    /* background-image: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.284), rgba(119, 119, 119, 0.284), rgba(119, 119, 119, 0.284), rgb(3, 3, 3) 100%); */
-
-    background: linear-gradient(#111111, #7777777b, #11111100);
+    background: linear-gradient(#111111, #7777777e, #11111100);
 
 }
 .brand{
@@ -298,10 +296,12 @@
     max-width: 82%;
     margin: 0 auto;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .unic-content{
     max-width: 660px;
+   
 }
 .unic-content-items{
     margin: 50px 0px;
@@ -321,12 +321,10 @@
     max-width: 100px;
     box-sizing: border-box;
     padding: 10px;
-    background: rgb(34, 34, 34);
     margin: 10px 0px;
 }
 .item-image img{
     width: 100%;
-    
 }
 
 .unic-img{
@@ -388,16 +386,16 @@ td, th{
 
 .inputs, .select{
     max-width: 100%;
-    padding: 15px 20px;
+    padding: 12px 20px;
     border-radius: 7px;
     font-size: 1rem;
     border: none;
     background: rgba(78, 77, 77, 0.51);
     margin: 10px 10px 10px 0px;
-
+    outline: none;
 }
 .select{
-    padding-right: 20px;
+    padding-right: 12px 20px;
     color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
@@ -410,6 +408,7 @@ option{
     background: rgba(23, 23, 23, 0.647);
     color: rgb(246, 246, 248);
 }
+
 /* meet our team related styles */
 
 .team-image{
@@ -470,6 +469,13 @@ option{
     font-weight: 800;
     line-height: 120px;
     letter-spacing: 0%;
+}
+
+.footer-menus{
+    margin-top: 30px;
+}
+.footer-menus > .nav-links{
+    border: none;
 }
 .ftr-menu-spaceing{
     line-height: 200%;
@@ -666,129 +672,6 @@ option{
 
 }
 
-/* resposnive for lg device  */
-
-@media screen and (min-width:576px) and (max-width:992px) {
-    .nav-bar{
-        display: none;
-    }
-    .banner{
-        flex-direction: column;
-    }
-    .banner-content{
-        max-width: 85%;   
-    }
-
-    .banner-image{
-        position: relative;
-        max-width: 576px;
-        margin-left: 20px;
-    }
-    .banner-image img{
-        width: 100%;
-        margin-top: 100px;
-        margin-left: 20px;
-    }
-
-    .img-content-top{
-        position: absolute;
-        right: -15%;
-        top: 30%;
-    }
-    .img-content-bottom{
-        position: absolute;
-        margin-left: -10px;
-        top: 600px;
-    }
-
-    .btn{
-        position: absolute;
-        padding: 20px 50px;
-    }
-    .btn-secondery{
-        margin-left: 300px;
-    }
-
-    .habits-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .titles{
-        font-size: 2.5rem;
-    }
-
-    .run-extra-miles{
-        align-items: start;
-    }
-
-    .run-image img{
-        height: 360px;
-    }
-    .run-content > .btn{
-        margin-top: 10px;
-    }
-
-    .unic{
-        flex-direction: column;
-        
-    }
-
-    .unic-image{
-        margin-bottom: 150px;
-    }
-
-    .bmi-calculator{
-        margin: 60px 0px;
-    }
-    
-    .calculate{
-        max-width: 87%;
-        flex-direction: column;
-        gap: 10px;
-        
-    }
-
-    .bmi-calculates{
-        margin-top: 30px;
-        padding: 50px 0px;
-    }
-    
-    .team-image{
-        width: 100%;   
-    }
-    .teamImage img{
-        width: 250px;
-        max-height: 180px;
-        margin-left: 3px;
-    }
-
-    .triner-content{
-        padding-left: 10px;
-    }
-    .footer{
-        padding: 50px 30px;
-    }
-    .footer-container{
-        flex-direction: column;
-        gap: 20px;
-        margin-top: 30px;
-    }
-    .footer-content{
-        display: block;
-    }
-    .footer-menus{
-        position: relative;
-        margin-top: 30px;
-    
-    }
-    .ftr-menus{
-        position: absolute;
-        margin-left: 350px;
-        margin-top: 200px;
-    }
-
-}
-
 /* resposnive for xl device  */
 
 @media screen and (min-width:992px) and (max-width:1220px) {
@@ -799,6 +682,13 @@ option{
     .nav-bar{
         display: none;
     }
+    .banner-title{
+        font-size: 4.2rem;
+    }
+
+    .title-shape{
+        font-size: 4.7rem;
+    }
     .img-content-top{
         top: 43%;
     }
@@ -808,6 +698,14 @@ option{
     }
     .title{
         font-size: 1.5rem;
+    }
+
+    .titles{
+        font-size: 2.3rem;
+    }
+
+    .unic-content{
+        max-width: 560px;
     }
 
     .bmi-calculates{
@@ -846,10 +744,9 @@ option{
     }
     .footer-menus{
         max-width: 400px;
+        margin-top: 30px;
     }
-
 }
-
 /* resposnive for xxl device  */
 @media screen and (min-width:1220px) and (max-width:1400px) {
     .navbar, .banner, .change-your-habits, .run-extra-miles, .unic, .bmi-calculator, .our-team{
@@ -872,5 +769,7 @@ option{
     .team-image{
         margin-bottom: 100px;
     }
-
+    .footer-menus{
+        margin-top: 30px;
+    }
 }
